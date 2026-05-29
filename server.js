@@ -1,8 +1,8 @@
 const http = require('http');
 const https = require('https');
 
-const ACCOUNT_SID = 'ACca74795a63742b875ce630de764476bf';
-const AUTH_TOKEN  = '4a83d0f27bfc93a1d9823798ffb4e767';
+const ACCOUNT_SID = process.env.TWILIO_ACCOUNT_SID;
+const AUTH_TOKEN  = process.env.TWILIO_AUTH_TOKEN;
 const FROM = 'whatsapp:+14155238886';
 const TO   = 'whatsapp:+19157026699';
 
